@@ -1,6 +1,14 @@
 class Buscaminas():
     def __init__(self, rows, cols, bombs):
-        self.board = [["" for j in range(cols)] for i in range(rows)]
+        #self.board = [["" for j in range(cols)] for i in range(rows)]}
+        self.board = [['2', 'B', '2', ' ', '1', 'B', 'B', '1'],
+                      ['3', 'B', '3', ' ', '1', '3', '3', '2'],
+                      ['3', 'B', '3', ' ', ' ', '1', 'B', '1'],
+                      ['4', 'B', '3', ' ', ' ', '1', '1', '1'],
+                      ['B', 'B', '2', ' ', ' ', ' ', ' ', ' '],
+                      ['2', '2', '1', ' ', ' ', ' ', ' ', ' '],
+                      [' ', ' ', '1', '1', '1', ' ', ' ', ' '],
+                      [' ', ' ', '1', 'B', '1', ' ', ' ', ' ']]
         self.show = [["" for j in range(cols)] for i in range(rows)]
         self.num_bombs = bombs
     def question(self, movs):
